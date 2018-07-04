@@ -2,6 +2,7 @@
 @import 'base/_variables';
 @import 'base/_base';
 @import 'base/_mixins';
+@import 'base/_typography';
 @import 'base/_utilities';
 @import 'modules/_btn';
 @import 'modules/_page-section';
@@ -9,4 +10,5 @@
 @import 'modules/_headline';
 @import 'modules/_row';
 @import 'modules/_features';
+@import 'modules/_testimonials';
 @import 'modules/_large-hero';
