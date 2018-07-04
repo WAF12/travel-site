@@ -1,0 +1,11 @@
+.b-margin-small{
+    margin-bottom: 1rem;
+}
+.b-margin-large{
+    margin-bottom: 2rem;
+
+    @mixin atSmall{
+        margin-bottom: 4rem;
+    }
+}
+

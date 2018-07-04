@@ -1,0 +1,35 @@
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @mixin atMedium{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    &__image{
+        margin-bottom: 1rem;
+
+            @mixin atMedium{
+            min-width: 30rem;
+            margin-right: 4rem;
+        }
+    }
+
+    &__text p{
+        line-height: 1.65;
+        font-size: 1.3rem;
+        margin: 1.8rem 0;
+        text-align: justify;
+
+        @mixin atSmall {
+            font-size: 1.6rem;
+        }
+
+        a{
+            font-weight: 700;
+        }
+    }
+}

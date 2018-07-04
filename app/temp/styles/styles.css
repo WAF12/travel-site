@@ -450,9 +450,19 @@ template {
   display: none;
 }
 
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
-    color: #333
+    color: #333;
+    font-size: 1.6rem;
 }
 
 html{
@@ -464,8 +474,180 @@ img{
     height: auto;
 }
 
+a {
+    color: #d59541;
+}
+
+.b-margin-small{
+    margin-bottom: 1rem;
+}
+
+.b-margin-large{
+    margin-bottom: 2rem;
+}
+
+@media (min-width:530px) {
+
+.b-margin-large{
+        margin-bottom: 4rem
+}
+    }
+
+.btn{
+    background-color: #2f5572;
+    color: #FFF;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+}
+
+.btn--orange{
+        background-color: #d59541;
+    }
+
+.btn--large{
+        font-size: 1.5rem;
+        padding: 1.5rem 1.8rem;
+    }
+
+@media (min-width:530px) {
+
+.btn--large{
+            font-size: 2rem
+    }
+    }
+
+.page-section{
+    padding: 3.2rem 0;
+}
+
+@media (min-width:768px) {
+
+.page-section{
+        padding: 7.2rem 0
+} 
+    }
+
+.page-section--blue{
+        background-color: #2f5572;
+        color: white;
+    }
+
+.wrapper{
+    padding: 0 1.8rem;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper--center{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+.headline{
+    font-weight: 300;
+    font-size: 2.6rem;
+    color: #2f5572;
+}
+
+@media (min-width:530px) {
+
+.headline{
+        font-size: 4.6rem
+}
+    }
+
+.headline--center{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline--orange{
+        color: #d59541;
+    }
+
+.headline--small{
+        font-size: 1.6rem;
+    }
+
+@media (min-width:530px) {
+
+.headline--small{
+            font-size: 2.5rem
+    }
+    }
+
+.headline--narrow{
+        max-width: 50rem;
+    }
+
+.row{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+@media (min-width:768px) {
+
+.row{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start
+} 
+    }
+
+.row__image{
+        margin-bottom: 1rem;
+    }
+
+@media (min-width:768px) {
+
+.row__image{
+            min-width: 30rem;
+            margin-right: 4rem
+    } 
+    }
+
+.row__text p{
+        line-height: 1.65;
+        font-size: 1.3rem;
+        margin: 1.8rem 0;
+        text-align: justify;
+    }
+
+@media (min-width:530px) {
+
+.row__text p{
+            font-size: 1.6rem
+    }
+    }
+
+.row__text p a{
+            font-weight: 700;
+        }
+
 .large-hero{
     position: relative;
+    border-bottom: #2f5572 solid 1rem;
 }
 
 .large-hero__text-content{
@@ -478,22 +660,50 @@ img{
     }
 
 .large-hero__title{
-        font-weight: 300;
+        font-weight: 500;
         color: #2f5572;
-        font-size: 6.5rem;
-        margin: 0;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        
+    }
+
+@media (min-width:530px) {
+
+.large-hero__title{
+            font-size: 7rem
+        
+    }
     }
 
 .large-hero__subtitle{
         font-weight: 300;
         color: #2f5572;
-        font-size: 3.8rem;
-        margin: 0;
+        font-size: 1.8rem;
+        margin: 0 0 1rem 0;
+    }
+
+@media (min-width:530px) {
+
+.large-hero__subtitle{
+            font-size: 5rem
+    }
     }
 
 .large-hero__description{
         color: white;
-        font-size: 3rem;
+        font-size: 1.6rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    } 
+        margin-bottom: 3rem;
+    }
+
+@media (min-width:530px) {
+
+.large-hero__description{
+            font-size: 3rem
+    }
+    }
+
+.large-hero__image{
+        display: block;
+    }
