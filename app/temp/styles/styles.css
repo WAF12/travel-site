@@ -483,7 +483,7 @@ a {
 }
 
 .b-margin-large{
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 @media (min-width:530px) {
@@ -571,6 +571,10 @@ a {
         color: #d59541;
     }
 
+.headline--white{
+        color: white;
+    }
+
 .headline--small{
         font-size: 1.6rem;
     }
@@ -644,6 +648,104 @@ a {
 .row__text p a{
             font-weight: 700;
         }
+
+.features__title {
+    font-size: 3.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width:530px) {
+
+.features__title {
+        font-size: 6rem
+}
+    }
+
+.features__title strong {
+        font-weight: 500;
+    }
+
+.features__title-icon {
+        width: 4rem;
+        margin-right: 1rem;
+    }
+
+@media (min-width:530px) {
+
+.features__title-icon {
+            width: 6rem
+    }
+    }
+
+.features__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+}
+
+@media (min-width:530px) {
+
+.features__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8rem
+}
+    }
+
+.features__grid-item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+@media (min-width:530px) {
+
+.features__grid-item{
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row
+    }
+    }
+
+.features__grid-item-icon{
+            width: 4rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            -ms-flex-item-align: center;
+                align-self: center;
+        }
+
+@media (min-width:530px) {
+
+.features__grid-item-icon{
+            width: 6rem;
+            -ms-flex-item-align: start;
+                align-self: flex-start
+        }
+    }
+
+.features__grid-item-text{
+            font-weight: 200;
+            font-size: 1.3rem;
+            line-height: 1.65;
+        }
+
+@media (min-width:530px) {
+
+.features__grid-item-text{
+            font-size: 1.6rem
+        }
+    }
 
 .large-hero{
     position: relative;

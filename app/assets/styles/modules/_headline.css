@@ -16,6 +16,9 @@
     &--orange{
         color: $mainOrange;
     }
+    &--white{
+        color: white;
+    }
 
     &--small{
         font-size: 1.6rem;
