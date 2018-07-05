@@ -19,7 +19,7 @@
         &:not(:last-child){
             margin-right: 0;
             
-            @mixin atSmall{
+            @mixin atMedium{
                 margin-right: 5rem;
             }
         }

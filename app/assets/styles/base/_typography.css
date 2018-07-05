@@ -11,6 +11,7 @@
     }
     &-icon {
         position: relative;
+        display: inline-block;
         top: 6px;
         width: 4rem;
         margin-right: 1rem;

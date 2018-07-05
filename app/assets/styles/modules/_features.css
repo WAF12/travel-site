@@ -5,7 +5,7 @@
 
     @mixin atSmall{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 8rem;
+        grid-gap: 8rem; 
     }
 
     &-item{
