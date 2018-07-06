@@ -739,7 +739,7 @@ a {
     }
 
 .icon {
-            background-image: url('/temp/sprite/css/svg/sprite.css-69f19c2e.svg');
+            background-image: url('/temp/sprite/css/sprite-69f19c2e.svg');
         }
 
 .icon--clear-view-escapes {
@@ -984,4 +984,26 @@ a {
 
 .large-hero__image{
         display: block;
+    }
+
+.footer{
+    background-color: #2f5572;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer__text{
+        display: block;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+
+@media (min-width:530px) {
+
+.footer__text{
+            display: inline-block;
+            margin-right: 5rem;
+            margin-bottom: 0
+    }
     } 
