@@ -3,11 +3,16 @@
     border-bottom: $mainBlue solid 1rem;
 
     &__text-content{
+        padding-top: 8rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
         text-align: center;
+
+        @mixin atMedium{
+            padding-bottom: 6rem;
+        }
     }
 
     &__title{
@@ -38,9 +43,10 @@
         font-size: 1.6rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
 
         @mixin atSmall {
+            margin-bottom: 3rem;
             font-size: 3rem;
         }
     }
