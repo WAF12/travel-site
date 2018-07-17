@@ -28,4 +28,8 @@ nbproject
 _notes
 dwsync.xml
 package-lock.json
+<<<<<<< HEAD
 .vscode/
+=======
+vscode/
+>>>>>>> 08ceaa9208fd061bd4769e12f79ccee6976d841e
