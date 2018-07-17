@@ -10,10 +10,22 @@ class RevealOnScroll {
     }
 
     hideInitally() {
-        console.log('test')
         this.itemsToReveal.addClass('reveal-item');
     }
-
+    //ES6 method with arrow functions
+    createWaypoints(){
+        this.itemsToReveal.each(el => {
+            new Waypoint({
+                element: this.itemsToReveal[el],
+                handler: () => {
+                    $(this.itemsToReveal[el]).addClass('reveal-item--visible');
+                },
+                offset: this.offsetPercentage
+            })
+        })
+    }
+    //Previous method shown below
+    /*
     createWaypoints(){
         var that = this;
         this.itemsToReveal.each(function() {
@@ -27,6 +39,7 @@ class RevealOnScroll {
             })
         })
     }
+    */
 }
 
 export default RevealOnScroll;
