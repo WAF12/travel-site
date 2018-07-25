@@ -1088,13 +1088,10 @@ Instead edit gulp/templates/sprite */
     }
 
 @media (min-width:768px) {
-
-.page-section--testimonials {
+            .page-section--testimonials.lazyloaded{
             background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-            background-size: cover
-
-
-    } 
+            background-size: cover;
+            } 
     }
 
 .testimonials{
