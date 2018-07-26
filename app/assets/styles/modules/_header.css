@@ -35,12 +35,13 @@
             transform: translateX(0);
 
             .header--dark & {
-              transform: scale(.57);
+              transform: scale(.55);
             }
         }
 
         &-text{
-            text-indent: -9999px
+            text-indent: -9999px;
+            max-width: inherit; 
         }
     }
 
@@ -56,7 +57,7 @@
     &__menu-icon{
         width: 2rem;
         height: 19px;
-        position: absolute;
+        position: absolute; 
         top: 1rem;
         right: 1rem;
 
