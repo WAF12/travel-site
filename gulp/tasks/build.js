@@ -32,7 +32,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
         '!./app/assets/styles/**',
         '!./app/assets/scripts/**',
         '!./app/temp',
-        '!./assets/temp/**',
+        '!./app/temp/**'
     ]
 
     return gulp.src(pathsToCopy).pipe(gulp.dest('./docs'));
@@ -48,7 +48,7 @@ gulp.task('optimiseImages',['deleteDistFolder', 'icons'], function() {
         .pipe(gulp.dest('./docs/assets/images'))
 })
 
-gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
+gulp.task('usemin', ['deleteDistFolder'], function() {
     return gulp.src('./app/index.html')
     .pipe(usemin({
         css: [function(){return rev()}, 
